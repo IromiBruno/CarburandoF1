@@ -1,0 +1,17 @@
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $space-lg;
+
+  @include respond(mobile) {
+    grid-template-columns: 1fr;
+  }
+}
+
+body {
+  background-color: #e5e5e5;
+}
+
+main {
+  padding-top: 60px;
+}

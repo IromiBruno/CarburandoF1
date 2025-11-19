@@ -1,0 +1,107 @@
+
+// HERO
+.hero {
+  background: url('../media/fondo-f1.jpg') center/cover no-repeat;
+  min-height: 55vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+  text-align: center;
+  color: white;
+
+  .hero-text {
+    background: rgba(0, 0, 0, 0.65);
+    padding: 1.8rem 2rem;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: auto;
+
+    h1 {
+      font-size: 2.6rem;
+      margin-bottom: 0.8rem;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .btn-primario {
+      @extend %btn-base;
+      background: $color-primary;
+      color: white;
+      font-weight: 600;
+
+      &:hover {
+        background: darken($color-primary, 10%);
+      }
+    }
+  }
+}
+
+// GALERÍA
+.foto-galeria {
+  width: 100%;
+  max-width: 500px;
+  border-radius: $radius-md;
+  @include soft-shadow;
+}
+
+// VIDEO
+.videoautos {
+  width: 100%;
+  max-width: 700px;
+  border-radius: $radius-md;
+  @include soft-shadow;
+  display: block;
+  margin: 0 auto;
+}
+
+// CARD NOTICIAS
+.card-noticia {
+  background: white;
+  padding: $space-md;
+  border-radius: $radius-md;
+  @include soft-shadow;
+  transition: 0.3s ease;
+
+  img {
+    width: 100%;
+    border-radius: $radius-md;
+    margin-bottom: $space-sm;
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+}
+
+// SUSCRIPCIÓN
+.suscripcion {
+  background: $color-light;
+  padding: 3rem 0;
+  text-align: center;
+
+  form {
+    margin-top: $space-md;
+
+    input {
+      padding: $space-sm;
+      border-radius: $radius-sm;
+      border: 1px solid #ccc;
+      margin-right: $space-sm;
+      width: 250px;
+    }
+
+    button {
+      @extend %btn-base;
+      background: $color-secondary;
+
+      &:hover {
+        background: darken($color-secondary, 10%);
+      }
+    }
+  }
+}

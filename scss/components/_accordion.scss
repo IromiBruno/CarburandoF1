@@ -1,0 +1,23 @@
+.accordion {
+  width: 100%;
+  background: white;
+  border-radius: $radius-md;
+  overflow: hidden;
+
+  &__item {
+    border-bottom: 1px solid #ddd;
+  }
+
+  &__header {
+    padding: $space-md;
+    background: $color-primary;
+    color: white;
+    cursor: pointer;
+  }
+
+  &__content {
+    padding: $space-md;
+    display: none;
+    background: $color-light;
+  }
+}

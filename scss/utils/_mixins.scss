@@ -1,0 +1,21 @@
+// Resposive mixin
+@mixin respond($size) {
+  @if $size == mobile {
+    @media (max-width: $mobile) { @content; }
+  }
+  @if $size == tablet {
+    @media (max-width: $tablet) { @content; }
+  }
+}
+
+// Centrado flexible
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Sombra suave
+@mixin soft-shadow {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}

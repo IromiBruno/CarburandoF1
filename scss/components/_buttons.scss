@@ -1,0 +1,19 @@
+.btn-primary {
+  @extend %btn-base;
+  background: $color-primary;
+  color: white;
+
+  &:hover {
+    background: darken($color-primary, 10%);
+  }
+}
+
+.btn-secondary {
+  @extend %btn-base;
+  background: $color-secondary;
+  color: black;
+
+  &:hover {
+    background: darken($color-secondary, 10%);
+  }
+}

@@ -1,0 +1,26 @@
+header {
+  background:transparent
+}
+
+
+  nav {
+    @include flex-center;
+    gap: $space-md;
+
+    a {
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  @include respond(mobile) {
+    nav {
+      flex-direction: column;
+      gap: $space-sm;
+    }
+  }
