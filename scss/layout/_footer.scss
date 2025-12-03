@@ -1,7 +1,36 @@
 footer {
   background: $color-dark;
   color: white;
-  text-align: center;
-  padding: $space-md;
+  padding: $space-md 0;
   margin-top: $space-lg;
+  font-size: 0.9rem;
+
+  .container {
+    text-align: center;
+
+    @include respond(tablet) {
+      text-align: left;
+    }
+  }
+
+  .footer-social {
+    display: flex;
+    gap: $space-sm;
+    justify-content: center;
+
+    @include respond(tablet) {
+      justify-content: flex-end;
+    }
+
+    a {
+      color: white;
+      font-size: 1.3rem;
+      transition: color 0.2s ease, transform 0.2s ease;
+
+      &:hover {
+        color: $color-primary;
+        transform: translateY(-2px);
+      }
+    }
+  }
 }

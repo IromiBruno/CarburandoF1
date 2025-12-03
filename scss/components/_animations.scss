@@ -7,3 +7,16 @@
 .float {
   animation: float-card 3s ease-in-out infinite;
 }
+
+/* === Animación de entrada al hacer scroll === */
+.animate-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform;
+}
+
+.animate-up.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}

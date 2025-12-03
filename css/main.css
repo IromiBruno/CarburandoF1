@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .formulario form button, .suscripcion form button, .hero .hero-text .btn-primario, .btn-secondary, .btn-primary {
   padding: 0.5rem 1rem;
   border-radius: 12px;
@@ -69,9 +70,36 @@ nav a:hover {
 footer {
   background: #222;
   color: white;
-  text-align: center;
-  padding: 1rem;
+  padding: 1rem 0;
   margin-top: 2rem;
+  font-size: 0.9rem;
+}
+footer .container {
+  text-align: center;
+}
+@media (max-width: 900px) {
+  footer .container {
+    text-align: left;
+  }
+}
+footer .footer-social {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+@media (max-width: 900px) {
+  footer .footer-social {
+    justify-content: flex-end;
+  }
+}
+footer .footer-social a {
+  color: white;
+  font-size: 1.3rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+footer .footer-social a:hover {
+  color: #1e88e5;
+  transform: translateY(-2px);
 }
 
 .grid-3 {
@@ -176,6 +204,19 @@ main {
 }
 .float {
   animation: float-card 3s ease-in-out infinite;
+}
+
+/* === Animación de entrada al hacer scroll === */
+.animate-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform;
+}
+
+.animate-up.in-view {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .hero {
