@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contactanos | Carburando F1</title>
+  <meta name="description" content="Contactate con Carburando F1 para enviar consultas, sugerencias o correcciones sobre la temporada 2025 de Fórmula 1.">
+  <meta name="keywords" content="contacto F1, contacto Carburando F1, sugerencias F1, consultas Fórmula 1">
+  <meta name="author" content="Iromi Bruno">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+
+<header class="bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark container">
+    <a class="navbar-brand fw-bold" href="../index.html">Carburando F1</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="parrilla.html">Parrilla 2025</a></li>
+        <li class="nav-item"><a class="nav-link" href="calendario.html">Calendario</a></li>
+        <li class="nav-item"><a class="nav-link" href="preguntasfrecuentes.html">Preguntas frecuentes</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contacto.html">Contactanos</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main class="container py-5">
+
+  <h1 class="text-danger fw-bold mb-3 text-center animate-up">Contactanos</h1>
+  <p class="text-center mb-5 animate-up">
+    ¿Tenés una duda, sugerencia o viste algún dato que podríamos mejorar?
+    Escribinos y seguimos carburando juntos este proyecto de F1.
+  </p>
+
+  <div class="row g-4 align-items-stretch">
+    <!-- Columna info -->
+    <div class="col-lg-5 animate-up">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <div>
+            <h2 class="h4 text-danger mb-3">Información de contacto</h2>
+            <p class="mb-3">
+              Este sitio está pensado como un espacio de fans de la Fórmula 1.
+              Si querés sumar ideas, avisar de un error o proponer una sección nueva,
+              este es el lugar.
+            </p>
+
+            <ul class="list-unstyled small mb-3">
+              <li class="mb-2">
+                <i class="bi bi-envelope-fill me-2"></i>
+                <strong>Correo:</strong> contacto@carburandof1.com
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-geo-alt-fill me-2"></i>
+                <strong>Ubicación:</strong> Proyecto web desde Argentina 🏁
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-clock-fill me-2"></i>
+                <strong>Horario de respuesta:</strong> dentro de las 48 hs hábiles.
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="h6 text-uppercase text-muted mb-2">Seguinos en redes</h3>
+            <div class="d-flex gap-3 fs-4">
+              <a href="https://instagram.com/iromibruno" target="_blank" rel="noopener" aria-label="Instagram">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="https://facebook.com/TU_FACEBOOK" target="_blank" rel="noopener" aria-label="Facebook">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="https://x.com/TU_USUARIO" target="_blank" rel="noopener" aria-label="X">
+                <i class="bi bi-twitter-x"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Columna formulario -->
+    <div class="col-lg-7 animate-up">
+      <section class="formulario mb-0">
+        <form action="#" method="post">
+
+          <label for="nombre">Nombre completo:</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Escribí tu nombre">
+
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" placeholder="tuemail@mail.com">
+
+          <label for="tipo">Tipo de consulta:</label>
+          <select id="tipo" name="tipo">
+            <option value="">Seleccioná una opción</option>
+            <option value="duda">Duda sobre calendario o parrilla</option>
+            <option value="sugerencia">Sugerencia de mejora del sitio</option>
+            <option value="error">Aviso de dato incorrecto</option>
+            <option value="otro">Otro</option>
+          </select>
+
+          <label for="motivo">Asunto:</label>
+          <input type="text" id="motivo" name="motivo" placeholder="Ej: Sugerencia para la sección Parrilla">
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" placeholder="Contanos en detalle tu consulta o idea"></textarea>
+
+          <button type="submit">Enviar mensaje</button>
+        </form>
+      </section>
+    </div>
+  </div>
+
+</main>
+
+<footer class="footer">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+    <small>© 2025 Carburando F1 · Todos los derechos reservados.</small>
+
+    <div class="footer-social">
+      <a href="https://instagram.com/iromibruno" target="_blank" rel="noopener" aria-label="Instagram Carburando F1">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="https://facebook.com/TU_FACEBOOK" target="_blank" rel="noopener" aria-label="Facebook Carburando F1">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a href="https://x.com/TU_USUARIO" target="_blank" rel="noopener" aria-label="Perfil de X Carburando F1">
+        <i class="bi bi-twitter-x"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const elements = document.querySelectorAll(".animate-up");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("in-view");
+      }
+    });
+  }, { threshold: 0.2 });
+
+  elements.forEach(el => observer.observe(el));
+});
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
